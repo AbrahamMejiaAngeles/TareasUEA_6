@@ -1,3 +1,90 @@
 body{
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
+    margin: 10px 50px;  
+}
+h1{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px; 
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+  font-size: 60px; 
+  color: rgb(255, 0, 0);
+  text-align: center;
+  margin-top: 10px;
+
+}
+.fichatecnica {
+  background-color: black;
+  border: 2px solid red;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 750px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  text-align: left;
+}
+
+.fichatecnica ul {
+  list-style-type: disc;
+  padding-left: 20px; /* espacio para las viñetas */
+}
+
+.fichatecnica li {
+  margin-bottom: 10px;
+}
+
+
+.acordeon {
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+/* Botones del acordeón */
+.acordeon-btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.acordeon-btn:hover {
+  background-color: #220000;
+}
+
+/* Contenido del acordeón */
+.acordeon-contenido {
+  display: none;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.imagen1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
 }

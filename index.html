@@ -7,11 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>el proyecto 1 se trata de ...</p>
-<h1>Semana1</h1>
+
+<h1>Proyecto de Instalacion interactiva</h1>
+
+<h2>Señales de reclutamiento</h2>
+
+<div class="fichatecnica">
+  <ul>
+    <li>El proyecto se trata de los factores que incentivan al reclutamiento de infantes por el crimen organizado</li>
+    <li><strong>Autores:</strong> Abraham Mejía Ángeles - Roberto Segundo Silvestre - Osvaldo Daniel Gutiérrez García</li>
+    <li><strong>Año de realización:</strong> 2025</li>
+    <li><strong>Formato:</strong> Instalación digital interactiva multimedia</li>
+  </ul>
+</div>
+
+
+
+<div class="acordeon">
+  <button class="acordeon-btn">¿Qué es mi proyecto?</button>
+  <div class="acordeon-contenido">
+    <p>Es una videoinstalación de arte interactivo de tres canales que explora el fenómeno del reclutamiento infantil por parte del narcotráfico en México. Su objetivo es visibilizar las condiciones sociales, económicas y familiares que colocan a los niños en situaciones de vulnerabilidad, empujándolos a involucrarse en la delincuencia organizada.</p>
+  </div>
+
+  <button class="acordeon-btn">Concepto de la obra</button>
+  <div class="acordeon-contenido">
+    <p>A través de una serie de videos que el espectador activa mediante gestos con la mano, se revelan de forma simbólica las principales causas que enfrentan los infantes. La pieza no muestra violencia explícita, pero la hace presente mediante lo simbólico: el deterioro progresivo de los entornos, la repetición silenciosa y el vacío emocional. La obra transforma lo cotidiano en un espacio de alerta, donde la participación del público pone en marcha una narrativa crítica y profundamente humana.</p>
+  </div>
+</div>
+
+
+
+<div>
+    <img src="assets/SEÑALES.jpg" alt="Señas que se utilizaran para el proyecto" class="imagen1">
+</div>
+
+
+
 
     <script src="script.js"></script>
-    
 
+    
+<script>
+  const botones = document.querySelectorAll(".acordeon-btn");
+  botones.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const contenido = btn.nextElementSibling;
+      const abierto = contenido.style.display === "block";
+
+      // Cierra todos los demás
+      document.querySelectorAll(".acordeon-contenido").forEach(c => c.style.display = "none");
+
+      // Alterna el actual
+      contenido.style.display = abierto ? "none" : "block";
+    });
+  });
+</script>
 </body>
 </html>
