@@ -123,3 +123,85 @@ h2{
   border-radius: 5px;
 }
 
+
+
+
+
+/* Estilo base para cada sección */
+.seccion-carrusel {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Títulos */
+.seccion-carrusel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Párrafos descriptivos */
+.seccion-carrusel p {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Contenedor de imágenes */
+.carrusel-imagenes {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Imágenes individuales */
+.carrusel-imagenes img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Botones */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-btn.prev {
+  left: 0;
+}
+
+.carrusel-btn.next {
+  right: 0;
+}
+
+
+
