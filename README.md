@@ -2,6 +2,4 @@
 UEA Arte Interactivo
 Alumno: Abraham Mejia Angeles  
 ## Descripcion  
-Este proyecto trata de...
-
-Aquí estarán mis tareas de arte interactivo 
+"Repositorio con el desarrollo completo del proyecto interactivo ‘Señales de reclutamiento’, incluyendo código, assets, documentación y avances técnicos."

@@ -205,3 +205,140 @@ h2{
 
 
 
+
+
+
+
+/* Menú consistente con las otras páginas */
+.menu-principal {
+  background-color: #000;
+  border: 2px solid red;         /* marco rojo externo */
+  border-radius: 8px;
+  padding: 12px 24px;
+  max-width: 1400px;
+  margin: 20px auto;            /* centra la caja */
+  box-sizing: border-box;
+}
+
+.menu-principal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-items: center;
+}
+
+.menu-principal li {
+  margin: 0;
+}
+
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding: 6px 10px;            /* espacio interno para hover */
+  display: inline-block;
+  transition: all 0.18s ease;
+}
+
+/* estilo hover y foco */
+.menu-principal a:hover,
+.menu-principal a:focus {
+  background-color: rgba(255,0,0,0.06);
+  border-radius: 6px;
+  color: #ff3b3b;
+}
+
+/* enlace activo de la página */
+.menu-principal a.active {
+  color: red;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === GALERÍA DE VIDEOS === */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.video-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.video-card h3 {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #000000;
+    color: #333333;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-redes {
+    margin-bottom: 10px;
+}
+
+.footer-redes a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-redes a:hover {
+    transform: scale(1.1);
+}
+
+.footer-redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #b0afaf;
+}
+
+
+
+
+
+
+

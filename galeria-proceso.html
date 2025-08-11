@@ -10,15 +10,14 @@
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="galeria-final.html">Galería final</a></li>
-      <li><a href="galeria-proceso.html">Galería de proceso</a></li>
+      <li><a href="galeria-proceso.html" class="active">Galería de proceso</a></li>
       <li><a href="documentacion.html">Documentación</a></li>
     </ul>
   </nav>
 
   <h1>Galería de Proceso</h1>
-  <p>Capturas de pantalla y evidencias del desarrollo técnico del proyecto en diversas etapas y plataformas.</p>
 
-  <!-- Sección: TouchDesigner -->
+
   <section id="touchdesigner" class="seccion-carrusel">
     <div class="carrusel-container">
       <h2>TouchDesigner: Programación de la Interactividad</h2>
@@ -42,11 +41,11 @@
     </div>
   </section>
 
-  <!-- Sección: Señales -->
+
   <section id="senales" class="seccion-carrusel">
     <div class="carrusel-container">
       <h2>Diseño de Señales con los Dedos</h2>
-      <p>Fotografías y gráficos de las señas creadas para ser reconocidas por la cámara del sistema interactivo.</p>
+      <p>Pictogramas de las señas, utilizadas para para generar animaciones sobre las indicaciones</p>
       <div class="carrusel" id="carrusel-senales">
         <button class="carrusel-btn prev">&#10094;</button>
         <div class="carrusel-imagenes">
@@ -62,7 +61,7 @@
     </div>
   </section>
 
-  <!-- Sección: Prompts IA -->
+
   <section id="gemini" class="seccion-carrusel">
     <div class="carrusel-container">
       <h2>Prompts en Gemini para generación IA con Veo 3</h2>
@@ -79,7 +78,6 @@
     </div>
   </section>
 
-  <!-- Sección: Photoshop -->
   <section id="photoshop" class="seccion-carrusel">
     <div class="carrusel-container">
       <h2>Edición en Photoshop para el Collage Final</h2>
@@ -100,7 +98,7 @@
     </div>
   </section>
 
-  <!-- Sección: Pruebas con proyectores -->
+
   <section id="proyectores" class="seccion-carrusel">
     <div class="carrusel-container">
       <h2>Pruebas con los Tres Proyectores</h2>
@@ -116,7 +114,30 @@
     </div>
   </section>
 
-  <!-- Script de carruseles -->
+
+<footer class="footer">
+    <div class="footer-redes">
+        <a href="https://www.facebook.com/abraham.mejiaangeles?locale=es_LA" target="_blank">
+            <img src="assets/face.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLfq4aFWe-siCVm-ZmUdTqpkN9YfKoY15_" target="_blank">
+            <img src="assets/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/abraham_angeles19?igsh=MXR5aGd2czByeHQwZQ==" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/AbrahamMejiaAngeles/TareasUEA_6" target="_blank">
+            <img src="assets/github.png" alt="GitHub">
+        </a>
+    </div>
+    <p class="footer-copy">© 2025 - Todos los derechos reservados</p>
+</footer>
+
+
+
+
+
+
   <script>
     document.querySelectorAll(".carrusel").forEach(carrusel => {
       const imagenes = carrusel.querySelector(".carrusel-imagenes");

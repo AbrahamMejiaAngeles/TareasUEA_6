@@ -1,22 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Galería Final</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Final</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="menu-principal">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="galeria-final.html">Galería final</a></li>
-      <li><a href="galeria-proceso.html">Galería de proceso</a></li>
-      <li><a href="documentacion.html">Documentación</a></li>
-    </ul>
-  </nav>
 
-  <h1>Galería Final</h1>
-  <p>Aquí puedes agregar las imágenes, capturas de pantalla o videos del resultado final de tu instalación interactiva.</p>
+<nav class="menu-principal">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="galeria-final.html" class="active">Galería Final</a></li>
+    <li><a href="galeria-proceso.html">Galería de Proceso</a></li>
+    <li><a href="documentacion.html">Documentación</a></li>
+  </ul>
+</nav>
 
+<header class="page-header">
+    <h1>Galería Final</h1>
+</header>
+
+<section class="video-gallery">
+    <div class="video-card">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/UlSbAUpbdNw?si=MieFUbUvvmNqtpJb" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <h3>Video 1 proyectado, sobre las causas del reclutamiento infantil en el contexto de la calle </h3>
+    </div>
+
+    <div class="video-card">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/YiROuYvynSg?si=K-IEFJCVoMfJlFPP" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <h3>Video 2 proyectado, sobre las causas del reclutamiento infantil en el contexto del hogar</h3>
+    </div>
+
+    <div class="video-card">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/a_i-OEyITuY?si=vCKLf8VA2ikhlNJm" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <h3>Video 3 proyectado, sobre las causas del reclutamiento infantil en el contexto escolar</h3>
+    </div>
+
+    <div class="video-card">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/-vjLxbKDD8k?si=WI5UJl50vOYyH7zS" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <h3>Video 4, demostración de la interactividad y funcionamiento de la instalación "Señales del reclutamiento."</h3>
+    </div>
+</section>
+
+
+
+
+
+
+
+  <section id="senales" class="seccion-carrusel">
+    <div class="carrusel-container">
+      <h2>Presentación de instalación final</h2>
+      <p>Fotografías de la preparación final.</p>
+      <div class="carrusel" id="carrusel-senales">
+        <button class="carrusel-btn prev">&#10094;</button>
+        <div class="carrusel-imagenes">
+          <img src="assets/final0.JPG" alt="Señal 1">
+          <img src="assets/final1.JPG" alt="Señal 2">
+          <img src="assets/final2.JPG" alt="Señal 3">
+          <img src="assets/final3.png" alt="Señal 4">
+        </div>
+        <button class="carrusel-btn next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-redes">
+        <a href="https://www.facebook.com/abraham.mejiaangeles?locale=es_LA" target="_blank">
+            <img src="assets/face.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLfq4aFWe-siCVm-ZmUdTqpkN9YfKoY15_" target="_blank">
+            <img src="assets/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/abraham_angeles19?igsh=MXR5aGd2czByeHQwZQ==" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/AbrahamMejiaAngeles/TareasUEA_6" target="_blank">
+            <img src="assets/github.png" alt="GitHub">
+        </a>
+    </div>
+    <p class="footer-copy">© 2025 - Todos los derechos reservados</p>
+</footer>
+
+
+
+
+<script>
+    document.querySelectorAll(".carrusel").forEach(carrusel => {
+      const imagenes = carrusel.querySelector(".carrusel-imagenes");
+      const slides = imagenes.querySelectorAll("img");
+      const prevBtn = carrusel.querySelector(".carrusel-btn.prev");
+      const nextBtn = carrusel.querySelector(".carrusel-btn.next");
+      let currentIndex = 0;
+
+      function updateCarrusel() {
+        const slideWidth = slides[0].clientWidth;
+        imagenes.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateCarrusel();
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarrusel();
+        }
+      });
+
+      window.addEventListener("resize", updateCarrusel);
+      window.addEventListener("load", updateCarrusel);
+    });
+  </script>
 </body>
 </html>
